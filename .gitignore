@@ -21,3 +21,4 @@ yarn-error.log*
 # Node.js (if you decide to add Node.js tools later)
 node_modules/
 package-lock.json 
+.vercel
