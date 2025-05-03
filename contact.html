@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Clint at Vac to the Future - Get in touch for vacuum excavation, underground utility location, and post hole digging services">
+    <title>Contact Us | Vac to the Future</title>
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Vac to the Future</h1>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">Meet Clint</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="tel:0409398838" class="nav-call"><i class="fas fa-phone-alt"></i> Call Us</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <h1>Contact Vac to the Future</h1>
+            <p class="contact-intro">Have a question or need a quote? Get in touch with us today. We serve Brisbane, Wynnum, and surrounding areas.</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card primary-card">
+                        <h2><i class="fas fa-id-card"></i> Direct Contact</h2>
+                        <div class="contact-details">
+                            <p><i class="fas fa-phone"></i> <a href="tel:0409398838">0409 398 838</a></p>
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:clint@vactothefuture.com">clint@vactothefuture.com</a></p>
+                            <p><i class="fas fa-map-marker-alt"></i> Wynnum, Brisbane, Australia</p>
+                            <p><i class="fas fa-globe"></i> Serving Brisbane-wide</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h2><i class="fas fa-clock"></i> Business Hours</h2>
+                        <div class="contact-details hours">
+                            <p><span>Monday - Friday:</span> 6:00 AM - 6:00 PM</p>
+                            <p><span>Saturday:</span> 7:00 AM - 3:00 PM</p>
+                            <p><span>Sunday:</span> By appointment only</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h2><i class="fas fa-share-alt"></i> Connect With Us</h2>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=61573914668702" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="outatime">
+                        <h3><i class="fas fa-exclamation-triangle"></i> URGENT REQUEST?</h3>
+                        <p>For emergency vacuum excavation services, call Clint directly:</p>
+                        <a href="tel:0409398838" class="btn">Emergency Call: 0409 398 838</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2>Send a Message to Clint</h2>
+                        <p>Fill out the form below and Clint will get back to you as soon as possible.</p>
+                    </div>
+                    <form id="contact-form" action="#" method="POST" aria-label="Contact Form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" id="name-label">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true" aria-labelledby="name-label">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" id="phone-label">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="^(?:\+?61|0)[2-478](?:[ -]?[0-9]){8}$" title="Enter a valid Australian phone number (e.g., 0412 345 678)" required aria-required="true" aria-labelledby="phone-label">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" id="email-label">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true" aria-labelledby="email-label">
+                        </div>
+                        <div class="form-group">
+                            <label for="service" id="service-label">Service Needed</label>
+                            <select id="service" name="service" required aria-required="true" aria-labelledby="service-label">
+                                <option value="">Select a Service</option>
+                                <option value="ndd">Non-Destructive Digging (NDD)</option>
+                                <option value="utility-location">Underground Utility Location</option>
+                                <option value="post-holes">Post Hole Digging</option>
+                                <option value="trench">Trench Excavation</option>
+                                <option value="high-pressure">High Pressure Cleaning</option>
+                                <option value="dewatering">Dewatering Services</option>
+                                <option value="mud-cleanup">Mud Cleanup</option>
+                                <option value="potholing">Potholing Services</option>
+                                <option value="other">Other (Please Specify)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" id="message-label">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required aria-required="true" aria-labelledby="message-label"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-section">
+                <h2><i class="fas fa-map-marked-alt"></i> Find Us</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14160.042982302425!2d153.16769863045773!3d-27.443827913303285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915f5860ebb01f%3A0x502a35af3decb90!2sWynnum%20QLD%204178%2C%20Australia!5e0!3m2!1sen!2sus!4v1714467257652!5m2!1sen!2sus" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta simple-cta">
+        <div class="container">
+            <h2>Get Updates & Industry News</h2>
+            <p>Follow us on Facebook for vacuum excavation tips, project highlights, and industry news.</p>
+            <div class="cta-buttons">
+                <a href="https://www.facebook.com/profile.php?id=61573914668702" target="_blank" rel="noopener noreferrer" class="btn">
+                    <i class="fab fa-facebook"></i> Follow On Facebook
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vac to the Future</h3>
+                    <p>Your trusted vacuum excavation partner.</p>
+                    <p>Based in Wynnum, Brisbane, Australia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">Meet Clint</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0409 398 838</p>
+                    <p><i class="fas fa-envelope"></i> clint@vactothefuture.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Wynnum, Brisbane, Australia</p>
+                    <p><i class="fas fa-globe"></i> Serving Brisbane-wide</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61573914668702" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Vac to the Future. All Rights Reserved. Professional Vacuum Excavation & NDD Services.</p>
+            </div>
+            <div class="developer-credit">
+                <p>Website proudly <a href="https://builtbyjack.com" target="_blank" rel="noopener noreferrer">BuiltByJack</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html> 

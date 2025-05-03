@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vactothefuture.com.au/sitemap.xml 
