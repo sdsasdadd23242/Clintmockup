@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         nav ul.show {
             display: block;
             position: absolute;
-            top: 70px;
+            top: 50px;
             left: 0;
             width: 100%;
             background-color: var(--midnight-blue);

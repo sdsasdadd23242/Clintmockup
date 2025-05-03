@@ -183,7 +183,7 @@ section:nth-child(even) {
 
 /* Header Styles */
 header {
-    padding: 15px 0;
+    padding: 8px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -197,12 +197,33 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    max-width: 30%;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-image {
+    height: auto;
+    width: 100%;
+    max-width: 100px;
+    object-fit: contain;
 }
 
 .logo h1 {
     font-size: 1.5rem;
     margin-bottom: 0;
     text-shadow: 0 0 10px rgba(255, 229, 0, 0.5);
+    color: var(--white);
 }
 
 .header-right {
@@ -241,13 +262,18 @@ nav ul {
 .menu-toggle {
     display: block;
     color: var(--electric-yellow);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     cursor: pointer;
+    padding: 5px;
 }
 
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;
+    }
+    
+    .logo h1 {
+        font-size: 1.8rem;
     }
     
     nav ul {
@@ -298,6 +324,25 @@ nav ul {
         display: inline-flex;
         align-items: center;
     }
+    
+    header .container {
+        padding: 0 20px;
+    }
+}
+
+/* Adjust for different device sizes */
+@media (max-width: 320px) {
+    .logo {
+        max-width: 40%;
+    }
+    
+    .logo-image {
+        max-width: 70px;
+    }
+    
+    header .container {
+        padding: 0 10px;
+    }
 }
 
 /* Hero Section */
@@ -307,7 +352,7 @@ nav ul {
     align-items: center;
     background: linear-gradient(rgba(12, 27, 51, 0.65), rgba(12, 27, 51, 0.65)), 
                 url('images/489799987_122120971460797155_5659387781025122296_n.jpg') no-repeat center center/cover;
-    margin-top: 70px;
+    margin-top: 55px;
     position: relative;
     overflow: hidden;
     padding: 0; /* Override the standard section padding */
@@ -995,7 +1040,7 @@ footer {
 
 /* Services Page */
 .services-intro {
-    padding: 150px 0 80px;
+    padding: 120px 0 80px;
     text-align: center;
     background: linear-gradient(
         rgba(12, 27, 51, 0.9), 
@@ -1193,7 +1238,7 @@ footer {
 
 /* Contact Page */
 .contact-section {
-    padding: 150px 0 80px;
+    padding: 120px 0 80px;
 }
 
 .contact-section h1 {
@@ -1556,7 +1601,7 @@ footer {
 
 /* Team Page */
 .team-intro {
-    padding: 150px 0 80px;
+    padding: 120px 0 80px;
     text-align: center;
     background: linear-gradient(
         rgba(12, 27, 51, 0.9), 
@@ -1849,4 +1894,232 @@ nav ul li a.active:after {
 
 .header-call {
     display: none;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 480px) {
+    .logo {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    
+    .logo-image {
+        max-width: 100px;
+    }
+    
+    header {
+        padding: 10px 0;
+    }
+    
+    .header-right {
+        justify-content: center;
+        width: 100%;
+        margin-top: 8px;
+    }
+    
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-toggle {
+        margin-left: 0;
+        padding: 8px 12px;
+        background-color: rgba(255, 110, 0, 0.2);
+        border-radius: 5px;
+        border: 1px solid rgba(255, 110, 0, 0.4);
+    }
+    
+    /* Mobile Services Page Optimization */
+    .service-item {
+        grid-template-columns: 1fr;
+        padding: 25px 20px;
+    }
+    
+    .service-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .service-content h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        display: block;
+    }
+    
+    .service-content h3:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .service-category {
+        display: block;
+        text-align: center;
+        margin: 0 auto 15px;
+        max-width: 200px;
+    }
+    
+    .services-intro h1 {
+        font-size: 2.2rem;
+    }
+    
+    .services-intro p {
+        font-size: 1.1rem;
+    }
+    
+    /* Mobile Team Page Optimization */
+    .team-intro h1 {
+        font-size: 2.2rem;
+    }
+    
+    .team-intro p {
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+    
+    .team-leader {
+        padding: 25px 20px;
+    }
+    
+    .profile-info h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .profile-info .position {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    
+    .profile-info .bio {
+        font-size: 1rem;
+    }
+    
+    .profile-info .quote {
+        font-size: 1rem;
+        padding: 15px 20px;
+    }
+    
+    .delorean-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .delorean-info p {
+        font-size: 1rem;
+    }
+    
+    .delorean-features li {
+        font-size: 0.95rem;
+    }
+    
+    .contact-direct .btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+    
+    /* Mobile Contact Page Optimization */
+    .contact-section h1 {
+        font-size: 2.2rem;
+        padding: 0 10px;
+    }
+    
+    .contact-intro {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    .contact-card {
+        padding: 20px 15px;
+    }
+    
+    .contact-card h2 {
+        font-size: 1.3rem;
+    }
+    
+    .contact-details p {
+        font-size: 1rem;
+    }
+    
+    .contact-form-container {
+        padding: 25px 15px;
+    }
+    
+    .form-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-header p {
+        font-size: 0.95rem;
+    }
+    
+    .form-group label {
+        font-size: 0.95rem;
+    }
+    
+    .map-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 481px) and (max-width: 767px) {
+    .logo {
+        max-width: 45%;
+    }
+    
+    .logo-image {
+        max-width: 100px;
+    }
+    
+    header {
+        padding: 10px 0;
+    }
+    
+    /* Tablet Services Page Optimization */
+    .service-item {
+        padding: 30px 25px;
+    }
+    
+    .service-content h3 {
+        font-size: 1.6rem;
+    }
+    
+    .services-intro h1 {
+        font-size: 2.5rem;
+    }
+    
+    /* Tablet Team Page Optimization */
+    .team-intro h1 {
+        font-size: 2.5rem;
+    }
+    
+    .team-leader {
+        padding: 35px 30px;
+    }
+    
+    .profile-info h2 {
+        font-size: 2.2rem;
+    }
+    
+    /* Tablet Contact Page Optimization */
+    .contact-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-card h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-header h2 {
+        font-size: 1.6rem;
+    }
 } 
