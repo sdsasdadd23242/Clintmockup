@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional vacuum excavation services in Brisbane including NDD, post hole digging, utility location, high-pressure cleaning & dewatering. Brisbane-wide service.">
-    <meta name="keywords" content="vacuum excavation services Brisbane, non-destructive digging Brisbane, post hole digging Wynnum, utility location Brisbane, high pressure cleaning Brisbane, dewatering services Brisbane">
+    <meta name="description" content="Our professional vacuum excavation services include non-destructive digging, underground utility location, high-pressure cleaning & dewatering. Queensland-wide service including Brisbane, Gold Coast, Sunshine Coast, Redland Bay and Ipswich.">
+    <meta name="keywords" content="vacuum excavation services Queensland, non-destructive digging Brisbane, post hole digging Wynnum, utility location Brisbane, high pressure cleaning Brisbane, dewatering services Brisbane">
     <meta name="author" content="Clint - Vac to the Future">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
-    <meta property="og:title" content="Brisbane Vacuum Excavation Services | Vac to the Future">
-    <meta property="og:description" content="Complete range of professional vacuum excavation services in Brisbane including NDD, post holes, utility location, high-pressure cleaning & dewatering.">
+    <meta property="og:title" content="Queensland Vacuum Excavation Services | Vac to the Future">
+    <meta property="og:description" content="Complete range of professional vacuum excavation services in Queensland including NDD, post holes, utility location, high-pressure cleaning & dewatering.">
     <meta property="og:image" content="images/489799987_122120971460797155_5659387781025122296_n.jpg">
     <meta property="og:url" content="https://vactothefuture.com.au/services.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_AU">
     <meta name="twitter:card" content="summary_large_image">
-    <title>Brisbane Vacuum Excavation Services | Non-Destructive Digging | Vac to the Future</title>
+    <title>Queensland Vacuum Excavation Services | Non-Destructive Digging | Vac to the Future</title>
     <link rel="canonical" href="https://vactothefuture.com.au/services">
     <link rel="preload" href="/styles.css" as="style">
     <link rel="stylesheet" href="/styles.css">
@@ -23,6 +23,563 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Enhanced styles for services page -->
+    <style>
+        /* Updated Hero Section */
+        .services-hero {
+            padding: 100px 0 60px;
+            text-align: center;
+            background: linear-gradient(
+                135deg,
+                rgba(10, 20, 42, 0.95), 
+                rgba(12, 27, 51, 0.85),
+                rgba(52, 152, 219, 0.75)
+            );
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.7);
+        }
+        
+        .services-hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/images/0ead6f4c-886f-4816-9547-49a3c2108754.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.15;
+            filter: blur(3px);
+            z-index: -1;
+        }
+        
+        .services-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            color: var(--white);
+            text-shadow: 0 0 20px rgba(255, 229, 0, 0.6);
+            animation: glow 2.5s infinite alternate;
+            letter-spacing: 2px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .services-hero h1:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--neon-orange), var(--flux-blue), var(--neon-orange));
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 4px;
+        }
+        
+        .hero-tagline {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 30px auto 0;
+            color: var(--white);
+            font-weight: 300;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        /* Collapsible Sections */
+        .collapsible {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(52, 152, 219, 0.2);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .collapsible-header {
+            padding: 20px 25px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(10, 20, 42, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .collapsible-header:hover {
+            background: rgba(52, 152, 219, 0.15);
+        }
+        
+        .collapsible-header h3 {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.4rem;
+        }
+        
+        .collapsible-header h3 i {
+            color: var(--neon-orange);
+            font-size: 1.6rem;
+        }
+        
+        .collapsible-header .toggle-icon {
+            color: var(--flux-blue);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .collapsible.active .collapsible-header .toggle-icon {
+            transform: rotate(180deg);
+        }
+        
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            padding: 0 25px;
+        }
+        
+        .collapsible.active .collapsible-content {
+            max-height: 1000px;
+            padding: 25px;
+        }
+        
+        /* Service Grid Layout */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+            align-items: start;
+        }
+        
+        .service-card {
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: all 0.35s ease;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            position: relative;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--neon-orange), var(--flux-blue));
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(52, 152, 219, 0.2);
+            border-color: rgba(52, 152, 219, 0.3);
+        }
+        
+        .service-card:hover:before {
+            height: 6px;
+        }
+        
+        .service-header {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+        }
+        
+        .service-icon {
+            margin-bottom: 15px;
+        }
+        
+        .service-icon i {
+            font-size: 2.2rem;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 50%;
+            color: var(--flux-blue);
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon i {
+            transform: scale(1.1);
+            color: var(--neon-orange);
+            box-shadow: 0 0 20px rgba(255, 110, 0, 0.25);
+        }
+        
+        .service-header h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: var(--flux-blue);
+        }
+        
+        .service-header p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            color: var(--delorean-silver);
+        }
+        
+        .service-category {
+            display: inline-block;
+            padding: 5px 12px;
+            font-size: 0.8rem;
+            background: rgba(52, 152, 219, 0.15);
+            color: var(--flux-blue);
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .service-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease-out;
+            position: relative;
+            z-index: 5;
+        }
+        
+        .service-card.active .service-details {
+            max-height: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .service-content {
+            padding: 20px;
+            background: rgba(10, 20, 42, 0.95);
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        
+        .service-content p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .service-list {
+            padding: 0 0 15px 15px;
+            list-style: none;
+        }
+        
+        .service-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: var(--delorean-silver);
+        }
+        
+        .service-list li:before {
+            content: '\f054';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--neon-orange);
+            font-size: 0.7rem;
+        }
+        
+        .toggle-details {
+            background: rgba(52, 152, 219, 0.25);
+            color: var(--white);
+            border: 1px solid rgba(52, 152, 219, 0.5);
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: block;
+            margin: 15px auto 0;
+            transition: all 0.3s ease;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+        
+        .toggle-details:hover {
+            background: rgba(52, 152, 219, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .toggle-details:focus {
+            outline: 2px solid var(--neon-orange);
+            box-shadow: 0 0 0 4px rgba(255, 110, 0, 0.3);
+        }
+        
+        .toggle-details i {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card.active .toggle-details i {
+            transform: rotate(180deg);
+        }
+        
+        /* Key Points Section */
+        .key-points-section {
+            padding: 60px 0;
+            background: rgba(10, 20, 42, 0.5);
+        }
+        
+        .key-points-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        
+        .key-points {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid rgba(52, 152, 219, 0.15);
+            transition: all 0.3s ease;
+        }
+        
+        .key-points:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+            border-color: rgba(52, 152, 219, 0.3);
+        }
+        
+        .key-points h3 {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            font-size: 1.6rem;
+        }
+        
+        .key-points h3 i {
+            color: var(--neon-orange);
+            font-size: 1.8rem;
+        }
+        
+        .key-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .key-list li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .key-list li i {
+            color: var(--flux-blue);
+            font-size: 1.2rem;
+            min-width: 24px;
+            margin-top: 4px;
+        }
+        
+        .key-list li .content {
+            flex: 1;
+        }
+        
+        .key-list li .content strong {
+            display: block;
+            color: var(--electric-yellow);
+            margin-bottom: 3px;
+            font-size: 1rem;
+        }
+        
+        .key-list li .content p {
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--delorean-silver);
+        }
+        
+        .uses-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .use-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 12px 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .use-item:hover {
+            background: rgba(52, 152, 219, 0.1);
+            transform: translateY(-3px);
+        }
+        
+        .use-item i {
+            color: var(--neon-orange);
+            font-size: 1.2rem;
+            min-width: 24px;
+        }
+        
+        .use-item span {
+            font-size: 0.9rem;
+            color: var(--delorean-silver);
+        }
+        
+        /* Standards Section */
+        .standards-section {
+            padding: 70px 0;
+        }
+        
+        .standards-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .standard-card {
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .standard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border-color: rgba(52, 152, 219, 0.2);
+        }
+        
+        .standard-icon {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: rgba(52, 152, 219, 0.1);
+        }
+        
+        .standard-icon i {
+            font-size: 2rem;
+            color: var(--flux-blue);
+            transition: all 0.3s ease;
+        }
+        
+        .standard-card:hover .standard-icon i {
+            transform: scale(1.15);
+            color: var(--neon-orange);
+        }
+        
+        .standard-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--flux-blue);
+        }
+        
+        .standard-card p {
+            font-size: 0.9rem;
+            color: var(--delorean-silver);
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        /* Responsive Styles */
+        @media (min-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: min-content;
+                align-items: flex-start;
+            }
+            
+            .key-points-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .standards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .uses-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .standards-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .uses-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: min-content;
+                align-items: flex-start;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .services-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1.2rem;
+            }
+            
+            .key-list li {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .key-list li i {
+                margin-bottom: 5px;
+            }
+            
+            .uses-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            
+            .collapsible-header h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
     <!-- Schema.org structured data for services -->
     <script type="application/ld+json">
     {
@@ -44,12 +601,12 @@
             "priceRange": "$$"
         },
         "areaServed": {
-            "@type": "City",
-            "name": "Brisbane"
+            "@type": "State",
+            "name": "Queensland"
         },
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Brisbane Vacuum Excavation Services",
+            "name": "Queensland Vacuum Excavation Services",
             "itemListElement": [
                 {
                     "@type": "Offer",
@@ -101,7 +658,10 @@
             </div>
             <div class="header-right">
                 <nav>
-                    <ul>
+                    <ul id="mobile-menu">
+                        <li class="brand-logo-mobile">
+                            <img src="/images/0ead6f4c-886f-4816-9547-49a3c2108754.png" alt="Vac to the Future Logo" width="180">
+                        </li>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html" class="active">Services</a></li>
                         <li><a href="team.html">Meet Clint</a></li>
@@ -109,194 +669,295 @@
                         <li><a href="tel:0409398838" class="nav-call"><i class="fas fa-phone-alt"></i> Call Us</a></li>
                     </ul>
                 </nav>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
             </div>
         </div>
     </header>
 
-    <section class="services-intro">
+    <!-- 1. Hero section with title and subtitle -->
+    <section class="services-hero">
         <div class="container">
-            <h1>Our Vacuum Excavation Services</h1>
-            <p>Vac to the Future provides professional vacuum excavation services across Brisbane, with a focus on safety, precision, and efficiency.</p>
+            <h1>Vacuum Excavation Services</h1>
+            <p class="hero-tagline">Professional, safe, and efficient non-destructive digging across Queensland</p>
         </div>
     </section>
 
-    <section class="services-list">
+    <!-- 2. What is Vacuum Excavation Section (Collapsible) -->
+    <section class="intro-section">
         <div class="container">
-            <div class="service-item">
-                <div class="service-icon">
-                    <i class="fas fa-map-marker-alt"></i>
+            <div class="collapsible active">
+                <div class="collapsible-header">
+                    <h3><i class="fas fa-info-circle"></i> What is Vacuum Excavation?</h3>
+                    <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
                 </div>
-                <div class="service-content">
-                    <span class="service-category">Safety First</span>
-                    <h3>Non-Destructive Digging (NDD)</h3>
-                    <p>Safely expose and identify underground infrastructure without the risk of damage:</p>
-                    <ul>
-                        <li>Water and sewer lines throughout local suburbs</li>
-                        <li>Electrical cables in residential and commercial properties</li>
-                        <li>Gas lines in the metropolitan area</li>
-                        <li>Fiber optics and telecommunications infrastructure</li>
-                        <li>Unknown buried infrastructure in varied terrain</li>
-                    </ul>
+                <div class="collapsible-content">
+                    <p>Also known as Non-Destructive Digging (NDD), vacuum excavation is the safest way to expose underground assets—ideal near sensitive infrastructure like fibre optics or high-pressure gas lines.</p>
+                    
+                    <h4>How It Works</h4>
+                    <p>Using a high-pressure water jet to loosen soil and a powerful vacuum to extract it, this method is safe for all soil types and won't damage existing utilities.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="service-item">
-                <div class="service-icon">
-                    <i class="fas fa-ruler-vertical"></i>
-                </div>
-                <div class="service-content">
-                    <span class="service-category">Construction</span>
-                    <h3>Post Hole Digging</h3>
-                    <p>Quick and efficient post hole excavation for various applications:</p>
-                    <ul>
-                        <li>Fence installations for homes and businesses</li>
-                        <li>Deck and pergola supports for outdoor living spaces</li>
-                        <li>Signage foundations for commercial properties</li>
-                        <li>Playground equipment in schools and parks</li>
-                        <li>Mailboxes and letterboxes for residential areas</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <div class="service-icon">
-                    <i class="fas fa-road"></i>
-                </div>
-                <div class="service-content">
-                    <span class="service-category">Underground</span>
-                    <h3>Trench Excavation</h3>
-                    <p>Safe and precise trench digging for various projects:</p>
-                    <ul>
-                        <li>Pipe and conduit installation in all areas</li>
-                        <li>Cable laying for electrical and communications</li>
-                        <li>Drainage systems for local weather conditions</li>
-                        <li>Irrigation systems for gardens and landscapes</li>
-                        <li>Foundation exploration for construction projects</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- 3. Services Grid (Responsive) -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
             
-            <div class="service-item">
-                <div class="service-icon">
-                    <i class="fas fa-shower"></i>
+            <div class="services-grid">
+                <!-- Service 1: NDD -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span class="service-category">Safety First</span>
+                        <h3>Non-Destructive Digging</h3>
+                        <p>Safe exposure of underground utilities using vacuum technology</p>
+                        <button class="toggle-details">View Details <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <p>Pot holing using NDD to expose underground utilities is recommended by asset owners, and often mandatory when working near utility exclusion zones. Our vacuum excavation provides the safest approach to working near critical infrastructure.</p>
+                            <ul class="service-list">
+                                <li>Safely expose water and sewer lines</li>
+                                <li>Identify electrical cables without damage</li>
+                                <li>Locate gas lines with precision</li>
+                                <li>Protect fiber optics and telecommunications</li>
+                                <li>Uncover unknown buried infrastructure</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-content">
-                    <span class="service-category">Cleaning</span>
-                    <h3>High Pressure Cleaning</h3>
-                    <p>Professional cleaning services for various surfaces:</p>
-                    <ul>
-                        <li>Driveway cleaning for homes and businesses</li>
-                        <li>Patio and deck washing in outdoor areas</li>
-                        <li>Concrete surface restoration</li>
-                        <li>Wall and fence cleaning for residential and commercial sites</li>
-                        <li>Pre-painting preparation for renovation projects</li>
-                    </ul>
+                
+                <!-- Service 2: Post Holes -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-ruler-vertical"></i>
+                        </div>
+                        <span class="service-category">Construction</span>
+                        <h3>Post Hole Digging</h3>
+                        <p>Efficient excavation for fences, decks, and structures</p>
+                        <button class="toggle-details">View Details <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <p>Quick and efficient post hole excavation for various applications:</p>
+                            <ul class="service-list">
+                                <li>Fence installations for homes and businesses</li>
+                                <li>Deck and pergola supports</li>
+                                <li>Signage foundations for commercial properties</li>
+                                <li>Playground equipment in schools and parks</li>
+                                <li>Mailboxes and letterboxes</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="service-item">
-                <div class="service-icon">
-                    <i class="fas fa-water"></i>
+                
+                <!-- Service 3: Trenching -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <span class="service-category">Underground</span>
+                        <h3>Trench Excavation</h3>
+                        <p>Precise trenching for pipes, cables, and utilities</p>
+                        <button class="toggle-details">View Details <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <p>Safe and precise trench digging for various projects:</p>
+                            <ul class="service-list">
+                                <li>Pipe and conduit installation</li>
+                                <li>Cable laying for electrical and communications</li>
+                                <li>Drainage systems installation</li>
+                                <li>Irrigation systems for landscapes</li>
+                                <li>Foundation exploration for construction</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-content">
-                    <span class="service-category">Water Management</span>
-                    <h3>Dewatering Services</h3>
-                    <p>Effective water removal and management:</p>
-                    <ul>
-                        <li>Pierhole dewatering for construction projects</li>
-                        <li>Dam, pond, and pool drainage</li>
-                        <li>Construction site dewatering in varied terrain</li>
-                        <li>Flood cleanup after storm events</li>
-                        <li>Water transfer services for residential and commercial needs</li>
-                    </ul>
+                
+                <!-- Service 4: Cleaning -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-shower"></i>
+                        </div>
+                        <span class="service-category">Cleaning</span>
+                        <h3>High Pressure Cleaning</h3>
+                        <p>Professional surface cleaning for driveways and patios</p>
+                        <button class="toggle-details">View Details <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <p>Professional cleaning services for various surfaces:</p>
+                            <ul class="service-list">
+                                <li>Driveway cleaning for homes and businesses</li>
+                                <li>Patio and deck washing</li>
+                                <li>Concrete surface restoration</li>
+                                <li>Wall and fence cleaning</li>
+                                <li>Pre-painting preparation</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="service-item">
-                <div class="service-icon">
-                    <i class="fas fa-road"></i>
+                
+                <!-- Service 5: Dewatering -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <span class="service-category">Water Management</span>
+                        <h3>Dewatering Services</h3>
+                        <p>Efficient water removal and management solutions</p>
+                        <button class="toggle-details">View Details <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <p>Effective water removal and management:</p>
+                            <ul class="service-list">
+                                <li>Pierhole dewatering for construction</li>
+                                <li>Dam, pond, and pool drainage</li>
+                                <li>Construction site dewatering</li>
+                                <li>Flood cleanup after storm events</li>
+                                <li>Water transfer services</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-content">
-                    <span class="service-category">Utility Detection</span>
-                    <h3>Potholing Services</h3>
-                    <p>Create inspection points to verify utility depths and locations:</p>
-                    <ul>
-                        <li>Pre-construction verification for building projects</li>
-                        <li>Utility conflict investigation in development areas</li>
-                        <li>As-built documentation for infrastructure</li>
-                        <li>Safe exposure of multiple utilities in complex underground networks</li>
-                        <li>Minimally invasive inspection across suburbs</li>
-                    </ul>
+                
+                <!-- Service 6: Cleanup -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <span class="service-category">Cleanup</span>
+                        <h3>Mud Cleanup Services</h3>
+                        <p>Thorough removal of mud and debris from sites</p>
+                        <button class="toggle-details">View Details <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <p>Efficient mud and debris removal solutions:</p>
+                            <ul class="service-list">
+                                <li>Post-construction site cleanup</li>
+                                <li>Dam and pond sediment removal</li>
+                                <li>Mud spill cleanup</li>
+                                <li>Stormwater pit cleaning</li>
+                                <li>General site cleaning and preparation</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="service-item">
-                <div class="service-icon">
-                    <i class="fas fa-broom"></i>
+                
+                <!-- Service 7: Commercial -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <span class="service-category">Business Solutions</span>
+                        <h3>Commercial Services</h3>
+                        <p>Specialized vacuum excavation for business projects</p>
+                        <button class="toggle-details">View Details <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <p>Specialized solutions for businesses and construction sites:</p>
+                            <ul class="service-list">
+                                <li>Construction site preparation</li>
+                                <li>Utility verification before excavation</li>
+                                <li>Emergency utility location</li>
+                                <li>Maintenance access points</li>
+                                <li>Site investigation and assessment</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-content">
-                    <span class="service-category">Cleanup</span>
-                    <h3>Mud Cleanup Services</h3>
-                    <p>Efficient mud and debris removal solutions:</p>
-                    <ul>
-                        <li>Post-construction site cleanup for builders</li>
-                        <li>Dam and pond sediment removal</li>
-                        <li>Mud spill cleanup for residential and commercial areas</li>
-                        <li>Stormwater pit cleaning for rainy seasons</li>
-                        <li>General site cleaning and preparation</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <div class="service-icon">
-                    <i class="fas fa-building"></i>
-                </div>
-                <div class="service-content">
-                    <span class="service-category">Business Solutions</span>
-                    <h3>Commercial Services</h3>
-                    <p>Specialized solutions for businesses and construction sites:</p>
-                    <ul>
-                        <li>Construction site preparation</li>
-                        <li>Utility verification before excavation for developers</li>
-                        <li>Emergency utility location for businesses</li>
-                        <li>Maintenance access points for commercial properties</li>
-                        <li>Site investigation and assessment</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <div class="service-icon">
-                    <i class="fas fa-home"></i>
-                </div>
-                <div class="service-content">
-                    <span class="service-category">Home Services</span>
-                    <h3>Residential Services</h3>
-                    <p>Help for homeowners with precision digging needs:</p>
-                    <ul>
-                        <li><strong>Locate services before DIY projects</strong></li>
-                        <li>Fence installation preparation for properties</li>
-                        <li>Yard drainage solutions for wet seasons</li>
-                        <li>Garden and landscaping excavation for outdoor spaces</li>
-                        <li>Swimming pool preparation for backyard projects</li>
-                    </ul>
+                
+                <!-- Service 8: Residential -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <span class="service-category">Home Solutions</span>
+                        <h3>Residential Services</h3>
+                        <p>Homeowner-focused excavation and digging solutions</p>
+                        <button class="toggle-details">View Details <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <p>Help for homeowners with precision digging needs:</p>
+                            <ul class="service-list">
+                                <li>Locate services before DIY projects</li>
+                                <li>Fence installation preparation</li>
+                                <li>Yard drainage solutions</li>
+                                <li>Garden and landscaping excavation</li>
+                                <li>Swimming pool preparation</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- 6. Our Service Standards Section -->
+    <section class="standards-section">
+        <div class="container">
+            <h2 class="section-title">Our Service Standards</h2>
+            
+            <div class="standards-grid">
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h4>Complete Service</h4>
+                    <p>Our fully trained operators follow strict safety and compliance standards on every job.</p>
+                </div>
+                
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Safety First</h4>
+                    <p>We prioritize the safety of your underground assets, our team, and your property.</p>
+                </div>
+                
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>Responsive Service</h4>
+                    <p>Quick quotes and efficient service throughout Queensland.</p>
+                </div>
+                
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <i class="fas fa-truck-monster"></i>
+                    </div>
+                    <h4>Modern Equipment</h4>
+                    <p>State-of-the-art vacuum excavation trucks for optimal performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CTA Section -->
     <section class="cta">
         <div class="container">
             <h2>Need Vacuum Excavation Services?</h2>
             <p>Contact us today for a quote or to discuss your project needs. We'll work with your schedule to complete your project efficiently and professionally.</p>
             
             <div class="cta-buttons">
-                <a href="tel:0409398838" class="btn">Call: 0409 398 838</a>
-                <a href="contact.html" class="btn btn-alt">Send a Message</a>
+                <a href="tel:0409398838" class="btn">Call Now: 0409 398 838</a>
+                <a href="contact.html" class="btn btn-alt">Get a Free Quote</a>
             </div>
         </div>
     </section>
@@ -321,9 +982,9 @@
                 <div class="footer-section">
                     <h3>Contact Us</h3>
                     <p><i class="fas fa-phone"></i> 0409 398 838</p>
-                    <p><i class="fas fa-envelope"></i> clint@vactothefuture.com</p>
+                    <p><i class="fas fa-envelope"></i> admin@vactothefuture.com</p>
                     <p><i class="fas fa-map-marker-alt"></i> Wynnum, Brisbane, Australia</p>
-                    <p><i class="fas fa-globe"></i> Serving Brisbane-wide</p>
+                    <p><i class="fas fa-globe"></i> Servicing Queensland-wide including Brisbane, Gold Coast, Sunshine Coast, Redland Bay, Ipswich and more</p>
                 </div>
                 <div class="footer-section">
                     <h3>Social Media</h3>
@@ -344,5 +1005,111 @@
     </footer>
 
     <script src="script.js" defer></script>
+    <!-- Services page specific JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Collapsible section functionality
+            const collapsibles = document.querySelectorAll('.collapsible');
+            
+            collapsibles.forEach(collapsible => {
+                const header = collapsible.querySelector('.collapsible-header');
+                const content = collapsible.querySelector('.collapsible-content');
+                
+                // Set initial state for active collapsibles
+                if (collapsible.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+                
+                header.addEventListener('click', function() {
+                    collapsible.classList.toggle('active');
+                    
+                    if (collapsible.classList.contains('active')) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    } else {
+                        content.style.maxHeight = 0;
+                    }
+                });
+            });
+            
+            // Service card toggle functionality
+            const serviceCards = document.querySelectorAll('.service-card');
+            
+            serviceCards.forEach(card => {
+                const toggleBtn = card.querySelector('.toggle-details');
+                const details = card.querySelector('.service-details');
+                
+                toggleBtn.addEventListener('click', function() {
+                    // First, close any currently open cards (except this one)
+                    serviceCards.forEach(otherCard => {
+                        if (otherCard !== card && otherCard.classList.contains('active')) {
+                            otherCard.classList.remove('active');
+                            otherCard.querySelector('.service-details').style.maxHeight = '0px';
+                        }
+                    });
+                    
+                    // Then toggle the current card
+                    const isActive = card.classList.contains('active');
+                    
+                    // Toggle the active class on the current card
+                    card.classList.toggle('active');
+                    
+                    // Update the height based on the new state
+                    if (!isActive) {
+                        // Calculate the exact height of the details content
+                        const contentHeight = card.querySelector('.service-content').offsetHeight;
+                        details.style.maxHeight = contentHeight + 'px';
+                        
+                        // Scroll this card into view
+                        setTimeout(() => {
+                            card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }, 100);
+                    } else {
+                        details.style.maxHeight = '0px';
+                    }
+                });
+            });
+            
+            // Smooth scroll to sections
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Mobile optimizations
+            if (window.innerWidth < 768) {
+                // Collapse all sections by default on mobile
+                document.querySelectorAll('.collapsible.active').forEach(coll => {
+                    if (!coll.classList.contains('keep-open')) {
+                        coll.classList.remove('active');
+                        coll.querySelector('.collapsible-content').style.maxHeight = 0;
+                    }
+                });
+            }
+            
+            // Re-calculate heights on window resize
+            window.addEventListener('resize', function() {
+                document.querySelectorAll('.collapsible.active').forEach(coll => {
+                    const content = coll.querySelector('.collapsible-content');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                });
+                
+                document.querySelectorAll('.service-card.active').forEach(card => {
+                    const details = card.querySelector('.service-details');
+                    details.style.maxHeight = details.scrollHeight + 'px';
+                });
+            });
+        });
+    </script>
 </body>
 </html> 
